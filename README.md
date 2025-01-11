@@ -5,7 +5,7 @@ This project allows you to track Ethereum transactions for a wallet from its cre
 
 ## Features
 - **Etherscan API Integration**: We use the Etherscan API to fetch transaction data.
-- **Comprehensive Transaction Tracking**: Unlike many other projects, this tool accounts for both **normal (external)** transactions and **internal** ones. Internal transactions are handled using the Web3 library, which provides the necessary tools for in-depth tracking.
+- **Comprehensive Transaction Tracking**: Unlike many other projects, this tool accounts for both **normal (external)** transactions and **internal** ones.
 - **Calculated Balance Verification**: The project calculates the wallet balance at each transaction step, ultimately arriving at a **calculated balance** that closely matches the balance provided by the Etherscan API.
 
 ## Unique Approach
