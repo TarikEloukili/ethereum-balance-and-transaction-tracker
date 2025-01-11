@@ -16,7 +16,7 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/TarikEloukili/ethereum-balance-and-transaction-tracker.git
    ```
 
 2. Install the required dependencies:
@@ -26,8 +26,8 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
 
 3. Set up your `.env` file with your Etherscan API key and Infura project ID:
    ```env
-   API_KEY=your_etherscan_api_key
-   INFURA_PROJECT_ID=your_infura_project_id
+   API_KEY="your_etherscan_api_key"
+   INFURA_PROJECT_ID="your_infura_project_id"
    ```
 
 4. Run the script:
