@@ -5,9 +5,9 @@ import os
 from datetime import datetime
 
 load_dotenv()
-#create an account on etherscan.io and get your API key:etherscan.io
+#create an account on 'etherscan.io' and get your API key:
 API_KEY = os.getenv("API_KEY")
-#you can also use Infura to get the transaction details: infura.io
+#create an account on 'infura.io' and get your API key:
 INFURA_PROJECT_ID = os.getenv("INFURA_PROJECT_ID")
 
 
