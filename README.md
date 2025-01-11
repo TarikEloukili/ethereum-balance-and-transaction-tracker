@@ -38,8 +38,8 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
    ```
 
 ## Output
-- real account's balance given by the etherscan api
-- calculated balance
+- A real account's balance given by the etherscan api
+- A calculated balance
 - Verification of balance accuracy using the `calculate_closeness_score()` function.
 - A plotted graph showing the wallet balance over time.
 
