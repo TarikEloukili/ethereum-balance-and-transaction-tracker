@@ -8,7 +8,7 @@ This project allows you to track Ethereum transactions for a wallet from its cre
 - **Comprehensive Transaction Tracking**: Unlike many other projects, this tool accounts for both **normal (external)** transactions and **internal** ones.
 - **Calculated Balance Verification**: The project calculates the wallet balance at each transaction step, ultimately arriving at a **calculated balance** that closely matches the balance provided by the Etherscan API.
 
-The calculated balance is verified using the `calculate_closeness_score()` function, which evaluates the similarity between the calculated balance and the real balance:
+- The calculated balance is verified using the `calculate_closeness_score()` function, which evaluates the similarity between the calculated balance and the real balance:
 - A score close to **1** indicates the calculated balance is accurate.
 - A score close to **0** suggests discrepancies between the calculated and real balances.
 
