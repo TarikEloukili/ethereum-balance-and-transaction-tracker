@@ -26,6 +26,7 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
 
 3. Set up your `.env` file with your Etherscan API key and Infura project ID:
    ```env
+   #create an account on etherscan.io and get your API key:etherscan.io
    API_KEY="your_etherscan_api_key"
    INFURA_PROJECT_ID="your_infura_project_id"
    ```
