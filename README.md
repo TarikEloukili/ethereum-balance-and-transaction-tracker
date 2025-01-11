@@ -26,8 +26,10 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
 
 3. Set up your `.env` file with your Etherscan API key and Infura project ID:
    ```env
-   #create an account on etherscan.io and get your API key:etherscan.io
+   #create an account on 'etherscan.io' and get your API key:
    API_KEY="your_etherscan_api_key"
+   
+   #create an account on 'infura.io' and get your API key:
    INFURA_PROJECT_ID="your_infura_project_id"
    ```
 
@@ -37,8 +39,11 @@ The calculated balance is verified using the `calculate_closeness_score()` funct
    ```
 
 ## Output
+- real account's balance given by the etherscan api
+- calculated balance
+- Verification of balance accuracy using the `calculate_closeness_score()` function.
 - A plotted graph showing the wallet balance over time.
-- Verification of balance accuracy using the `balance_closeness` function.
+
 
 ---
 Feel free to contribute to this project by submitting issues or pull requests!
