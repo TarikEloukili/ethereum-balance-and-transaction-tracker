@@ -37,7 +37,7 @@ def get_transaction_details(tx_hash):
     else:
         raise ValueError(f"Transaction details not found for {tx_hash}")
 
-def get_external_transactions(address):
+def get_transactions(address):
     transaction_url = make_api_url("account", "txlist", address, startblock=0, endblock=99999999, page=1, offset=10000, sort="asc", apikey=API_KEY)
     response = get(transaction_url)
     data = response.json()["result"]
@@ -103,15 +103,15 @@ real_balance = get_account_balance(ADDRESS)
 print(f"Account Balance: {real_balance} ETH")
 
 
-calculated_balance = get_external_transactions(ADDRESS)[0]
+calculated_balance = get_transactions(ADDRESS)[0]
 print(f"Calculated Balance: {calculated_balance} ETH")
 
 
 print(f"Closeness Score: {calculate_closeness_score(real_balance, calculated_balance)}")
 
 
-times = get_external_transactions(ADDRESS)[1]
-balances = get_external_transactions(ADDRESS)[2]
+times = get_transactions(ADDRESS)[1]
+balances = get_transactions(ADDRESS)[2]
 
 
 plt.plot(times, balances)
